@@ -1,0 +1,108 @@
+@font-face {
+  font-family: headline;
+  src: url('../Montserrat-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: description;
+  src: url('../Montserrat-Light.ttf');
+}
+
+div.spacer {
+  margin: 15px;
+}
+
+div.desc-wrapper {
+  font-family: description;
+  line-height: 25px;
+}
+
+
+div.description-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+div.tableau-list-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+div.about-the-data {
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+div.about-the-data p {
+  font-family: description;
+  line-height: 25px;
+}
+
+div.about-the-data h4 {
+  font-family: headline;
+}
+
+div.tip-header {
+  font-family: headline;
+}
+
+div.tip-list {
+  font-family: description;
+}
+
+div.tip-list li {
+  margin: 10px 0;
+  font-family: description;
+}
+
+div.tips {
+  margin-bottom: 40px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+div.airtable {
+  margin-left: 23%;
+  margin-right: 23%;
+}
+
+div.airtable-title {
+  font-family: headline;
+  margin-left: 23%;
+}
+
+div.support-wrapper {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-self: center;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+div.support-wrapper div.project p {
+  margin-left: 25%;
+}
+
+div.support-wrapper p {
+  font-family: description;
+  line-height: 20px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+div.support-title h4 {
+  font-family: headline;
+}
+
+div.support-wrapper img {
+  align-self: center;
+}

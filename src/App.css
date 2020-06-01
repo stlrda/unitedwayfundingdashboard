@@ -2,15 +2,62 @@
   text-align: center;
 }
 
+@font-face {
+  font-family: description;
+  src: url('./Montserrat-Light.ttf');
+}
+
+@font-face {
+  font-family: headline;
+  src: url('./Montserrat-ExtraBold.ttf');
+}
+
+div.about-wrapper {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+div.app-background {
+  background-color: #fafafa;
+  color: #212121;
+}
+
+div.about-wrapper h4.about-title {
+  font-family: headline;
+}
+
+div.about-wrapper p.about-text {
+  font-family: description;
+  line-height: 25px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.select-wrapper {
+  align-content: center;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  display: inline-block;
+  font-family: description;
+}
+
+div.select-wrapper h4.select-header {
+  font-family: headline;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
 }
 
 .App-header {
@@ -24,15 +71,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div.spacer {
+  margin-top: 25px;
 }
