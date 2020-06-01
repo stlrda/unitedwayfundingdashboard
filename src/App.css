@@ -70,3 +70,7 @@ div.select-wrapper h4.select-header {
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+div.spacer {
+  margin-top: 25px;
+}

@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
-import { Grid } from '@material-ui/core'
 import TableauContainer from './TableauContainer'
 import DisplayDescription from './DisplayDescription'
 import './Display.css'
 import DisplayTips from './DisplayTips'
 // import ListImpactAreas from './ImpactAreaList'
+
+const iframeSrc = "https://airtable.com/embed/shryTzyC4sxv0DkPH?backgroundColor=green&viewControls=on";
+const iframeAltText = 'Funding Data Airtable'
 
 class DisplayManager extends Component {
   /** Takes in the Descritption of the dashboard/map, the actual dashboard, and tips section for how to interact with the dashboard
@@ -31,6 +33,19 @@ class DisplayManager extends Component {
             </> : null} */}
         </div>
         <div className="spacer"></div>
+        <div className="about-the-data">
+            <h4>About the Data</h4>
+          <p>
+            All data contained within the Regional Funding Map are publicly available, and the RDA makes no claim to license over their use or re-use. 
+            Whenever possible, the St. Louis Regional Data Alliance referenced direct funding source information, including those published by the IRS and <a target="_blank" href="http://usaspending.gov">usaspending.gov</a>. 
+            Additional data was collected and/or confirmed using the Illinois Catalog of State Financial Assistance, Missouri Accountability Portal, 
+            United Way Greater St. Louis 2-1-1, Candid, Missouri Department of Elementary and Secondary Education, Illinois State Board of Education, 
+            ProPublica Nonprofit Explorer, National Taxonomy of Exempt Entities, annual reports, financial statements, and data requests. 
+            These data are not intended for commercial or solicitation purposes. 
+            The RDA makes these data available as-is and disclaims all implied or express warrantees of any kind with regard to the data. Please contact <a href="mailto:rda@umsl.edu">rda@umsl.edu</a> with additional questions
+          </p>
+        </div>
+        <div className="spacer"></div>
         <div className="tips">
           <DisplayTips displayTips={this.props.display} />
         </div>
@@ -40,8 +55,8 @@ class DisplayManager extends Component {
         <div className="airtable">
           <iframe
             class="airtable-embed"
-            src="https://airtable.com/embed/shryTzyC4sxv0DkPH?backgroundColor=green&viewControls=on"
-            title='Funding Data Airtable'
+            src={iframeSrc}
+            title={iframeAltText}
             frameborder="0"
             onmousewheel=""
             width="100%"
