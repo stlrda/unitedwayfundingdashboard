@@ -1,0 +1,109 @@
+@font-face {
+  font-family: headline;
+  src: url('../Montserrat-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: description;
+  src: url('../Montserrat-Light.ttf');
+}
+
+div.img-wrapper {
+  text-align: left;
+}
+
+div.support-title h4 {
+  font-family: headline;
+}
+
+div.airtable-title {
+  font-family: headline;
+  margin-left: 23%;
+}
+
+div.desc-wrapper {
+  font-family: description;
+  line-height: 25px;
+}
+
+div.tips {
+  margin-bottom: 40px;
+}
+
+div.tip-header {
+  font-family: headline;
+}
+
+div.tip-list {
+  font-family: description;
+}
+
+div.tip-list li {
+  margin: 10px 0;
+  font-family: description;
+}
+
+div.UW-fund-footer {
+  background-color: #1B365D;
+  display: inline-block;
+  box-shadow: 0px -1px 20px #888888;
+}
+
+div.support-wrapper {
+  align-self: center;
+}
+
+div.footer-box-rda {
+  margin: 10px;
+  background-color: white;
+  display: inline-block;
+  border-radius: 5%;
+}
+
+div.footer-box-daugherty {
+  margin: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: white;
+  display: inline-block;
+  border-radius: 5%;
+}
+
+div.supporters {
+  text-align: right;
+  margin-right: 5%;
+}
+
+div.supporter-text {
+  display: inline-block;
+  color: white;
+  text-align: center;
+}
+
+div.spacer {
+  margin: 15px;
+}
+
+div.description-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+div.tableau-list-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+div.airtable {
+  margin-left: 23%;
+  margin-right: 23%;
+}
+
+div.tips {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+

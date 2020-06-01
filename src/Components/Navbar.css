@@ -1,0 +1,27 @@
+@font-face {
+  font-family: headline;
+  src: url('../Montserrat-ExtraBold.ttf');
+}
+
+.MuiAppBar-colorPrimary {
+  background-color: #1B365D !important;
+}
+
+.MuiTypography-root.MuiTypography-h3 {
+  font-family: headline !important;
+  padding: 5px;
+}
+
+.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-colorInherit {
+  text-align: right;
+}
+
+h1.app-title {
+  font-family: headline;
+}
+
+h4.app-links {
+  color: white;
+  text-align: right;
+  font-family: headline;
+}
