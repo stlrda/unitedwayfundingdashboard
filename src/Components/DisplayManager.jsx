@@ -3,6 +3,7 @@ import TableauContainer from './TableauContainer'
 import DisplayDescription from './DisplayDescription'
 import './Display.css'
 import DisplayTips from './DisplayTips'
+import fullDataSet from '../fullDataSet.csv'
 // import ListImpactAreas from './ImpactAreaList'
 
 const iframeSrc = "https://airtable.com/embed/shryTzyC4sxv0DkPH?backgroundColor=green&viewControls=on";
@@ -27,27 +28,24 @@ class DisplayManager extends Component {
         <div className='spacer'></div>
         <div className='tableau-list-wrapper'>
           <TableauContainer url={this.props.url} />
-          {/* {this.props.display == 'Individual Awards By Topic' ?
-            <>
-              <ListImpactAreas />
-            </> : null} */}
         </div>
         <div className="spacer"></div>
+        <div className="tips">
+          <DisplayTips displayTips={this.props.display} />
+        </div>
+        <div className="spacer"><hr/></div>
         <div className="about-the-data">
-            <h4>About the Data</h4>
+            <h3>About the Data</h3>
           <p>
             All data contained within the Regional Funding Map are publicly available, and the RDA makes no claim to license over their use or re-use. 
-            Whenever possible, the St. Louis Regional Data Alliance referenced direct funding source information, including those published by the IRS and <a target="_blank" href="http://usaspending.gov">usaspending.gov</a>. 
+            Whenever possible, the St. Louis Regional Data Alliance referenced direct funding source information, including those published by the IRS and <a target="_blank" rel="noopener noreferrer" href="http://usaspending.gov">usaspending.gov</a>. 
             Additional data was collected and/or confirmed using the Illinois Catalog of State Financial Assistance, Missouri Accountability Portal, 
             United Way Greater St. Louis 2-1-1, Candid, Missouri Department of Elementary and Secondary Education, Illinois State Board of Education, 
             ProPublica Nonprofit Explorer, National Taxonomy of Exempt Entities, annual reports, financial statements, and data requests. 
             These data are not intended for commercial or solicitation purposes. 
             The RDA makes these data available as-is and disclaims all implied or express warrantees of any kind with regard to the data. Please contact <a href="mailto:rda@umsl.edu">rda@umsl.edu</a> with additional questions
           </p>
-        </div>
-        <div className="spacer"></div>
-        <div className="tips">
-          <DisplayTips displayTips={this.props.display} />
+          <a href={fullDataSet} download><p>Download the full data set here</p></a>
         </div>
         <div className='airtable-title'>
           <h4>Data for all counties:</h4>
@@ -64,7 +62,6 @@ class DisplayManager extends Component {
             style={{ background: "transparent", border: "1px solid #ccc" }}>
           </iframe>
         </div>
-        <div className="spacer"></div>
       </>
     )
   }
