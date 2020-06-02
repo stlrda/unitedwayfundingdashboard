@@ -12,6 +12,10 @@
   src: url('./Montserrat-ExtraBold.ttf');
 }
 
+div.funding-logo {
+  align-self: center;
+}
+
 div.about-wrapper {
   margin-left: 25%;
   margin-right: 25%;
@@ -73,4 +77,6 @@ div.select-wrapper h4.select-header {
 
 div.spacer {
   margin-top: 25px;
+  margin-left: 18%;
+  margin-right: 18%;
 }
